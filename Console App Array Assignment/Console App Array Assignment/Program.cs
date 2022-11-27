@@ -1,22 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Console_App_Array_Assignment
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             string[] anArray = { "Kari", "Oscar", "Matt" };  //0=Kari, 1=Oscar, 2=Matt
             Console.WriteLine("Pick a number between 0 and 2");  //asking for an index
             int theIndex = Convert.ToInt32(Console.ReadLine());  //converts string to int
 
-            if (theIndex > 2)  //if user picks number greater than 2
+            if (theIndex < 0 || theIndex > 2)  //if user picks number less than 0 or greater than 2
             {
-                Console.WriteLine("That number is greater than a number betweem 0 and 2. Pick another number.");
+                Console.WriteLine("That number is not betweem 0 and 2. Pick another number.");
                 theIndex = Convert.ToInt32(Console.ReadLine());
             }
             Console.WriteLine(anArray[theIndex]); //selects the name in chosen index
@@ -27,13 +25,28 @@ namespace Console_App_Array_Assignment
             Console.WriteLine("Pick a number between 0 and 3");
             int intIndex = Convert.ToInt32(Console.ReadLine());
 
-            if (intIndex > 3)  //if user selects number greater than 3
+            if (intIndex < 0 || intIndex > 3 )  //if user selects number less than 0 or greater than 3
             {
-                Console.WriteLine("That number is greater than a number betweem 0 and 3. Pick another number.");
+                Console.WriteLine("That number is not betweem 0 and 3. Pick another number.");
                 intIndex = Convert.ToInt32(Console.ReadLine());
             }
             Console.WriteLine(anInt[intIndex]);
-          
+
+
+            List<string> stringList = new List<string>();
+            stringList.Add("Kari");
+            stringList.Add("Oscar");
+            stringList.Add("Matt");
+
+            Console.WriteLine("Pick a number between 0 and 2");
+            string listString = Console.ReadLine();
+
+            if (listString < 0 || listString > 2)  //if user selects number less than 0 or greater than 2
+            {
+                Console.WriteLine("That number is not betweem 0 and 2. Pick another number.");
+                listString = Console.ReadLine();
+            }
+            Console.WriteLine(stringList[listString]);
 
             Console.ReadLine();
   
