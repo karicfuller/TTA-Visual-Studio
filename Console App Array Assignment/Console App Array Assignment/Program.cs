@@ -39,7 +39,7 @@ namespace Console_App_Array_Assignment
             stringList.Add("Matt");
 
             Console.WriteLine("Pick a number between 0 and 2");
-            int listString = Console.ReadLine();
+            int listString = Convert.ToInt32(Console.ReadLine());
 
             if (listString < 0 || listString > 2)  //if user selects number less than 0 or greater than 2
             {
