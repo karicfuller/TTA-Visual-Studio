@@ -15,10 +15,18 @@ namespace Strings_and_Integers_Assignment
                 List<int> aNumber = new List<int>() { 2, 4, 6, 8 }; //list of integers to be divided by user's number
                 Console.WriteLine("Pick a whole number."); //request user select a number
                 int pickedNumber = Convert.ToInt32(Console.ReadLine()); //convert user's number to string
+                bool trueFalse = false;
 
-                for (int i = 0; i < 4; i++) //iterate through list of integers
+                while (trueFalse == false)
                 {
-                    Console.WriteLine(aNumber[i] / pickedNumber); //number from list divided by user's number
+                    for (int i = 0; i < 4; i++) //iterate through list of integers
+                    {
+                        Console.WriteLine(aNumber[i] / pickedNumber); //number from list divided by user's number
+                    }
+                }
+                while (true)
+                {
+
                 }
             }
             catch (FormatException ex) //issue with format
@@ -37,6 +45,7 @@ namespace Strings_and_Integers_Assignment
             {
                 Console.ReadLine();
             }
+            Console.WriteLine("Emerged from the Try/Catch Block");
             
         }
     }
