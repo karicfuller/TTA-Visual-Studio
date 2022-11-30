@@ -40,20 +40,25 @@ namespace Six_Part_Assignment
 
             ////PART 3 ASSIGNMENT
 
-            //int[] theInt = { 5, 7, 9, 10, 15, 20 }; //array to iterate through
+            int[] theInt = { 5, 7, 9, 10, 15, 20 }; //array to iterate through
 
-            //for (int i = 0; i < theInt.Length; i++) //iterating through array
-            //{
-            //    if (theInt[i] < 10) //if number in array is less than 10
-            //    {
-            //        Console.WriteLine("The nummber " + theInt[i] + " is less than 10."); //console will read the sentence
-            //    }
-            //    if (theInt[i] <= 10) //if number in array is less or equal to 10
-            //    {
-            //        Console.WriteLine("The number " + theInt[i] + " is less than or equal to 10."); //console will read sentence
-            //    }
-            //}
-            //Console.ReadLine();
+            for (int i = 0; i < theInt.Length; i++) //iterating through array
+            {
+                if (theInt[i] < 10) //if number in array is less than 10
+                {
+                    Console.WriteLine("The nummber " + theInt[i] + " is less than 10."); //console will read the sentence
+                }
+                if (theInt[i] <= 10) //if number in array is less or equal to 10
+                {
+                    Console.WriteLine("The number " + theInt[i] + " is less than or equal to 10."); //console will read sentence
+                }
+            }
+            for (theInt[i] <= 10)
+            {
+                Console.WriteLine("The number " + theInt[i] + " is less than or equal to 10."); //console will read sentence
+            }
+
+            Console.ReadLine();
 
             //PART 4 ASSIGNMENT
 
