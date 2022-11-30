@@ -12,8 +12,8 @@ namespace Six_Part_Assignment
         {
             //PART 1 ASSIGNMENT
 
-            //an array of 4 months for the user to choose from
-            //string[] anArray = { "January", "February", "March", "April" }; 
+            ////an array of 4 months for the user to choose from
+            //string[] anArray = { "January", "February", "March", "April" };
             //Console.WriteLine("What are one of the first four months of the year?"); //asking userr to select month
             //string theMonth = Console.ReadLine();
 
@@ -38,7 +38,7 @@ namespace Six_Part_Assignment
             //Console.ReadLine();
 
 
-            ////PART 3 ASSIGNMENT
+            //PART 3 ASSIGNMENT
 
             int[] theInt = { 5, 7, 9, 10, 15, 20 }; //array to iterate through
 
