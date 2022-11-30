@@ -53,9 +53,9 @@ namespace Six_Part_Assignment
                     Console.WriteLine("The number " + theInt[i] + " is less than or equal to 10."); //console will read sentence
                 }
             }
-            for (theInt[i] <= 10)
+            for (int i = 0; i <= 10; i++)
             {
-                Console.WriteLine("The number " + theInt[i] + " is less than or equal to 10."); //console will read sentence
+                Console.WriteLine("The number " + i + " is less than or equal to 10."); //console will read sentence
             }
 
             Console.ReadLine();
@@ -103,23 +103,23 @@ namespace Six_Part_Assignment
 
             //PART 6 ASSIGNMENT
 
-            List<string> aFruit = new List<string>() { "apple", "orange", "grape", "apple" }; //list of strings
-            List<string> aFruitBackUp = new List<string>(); //create backup list that will store strings as iterated
+            //List<string> aFruit = new List<string>() { "apple", "orange", "grape", "apple" }; //list of strings
+            //List<string> aFruitBackUp = new List<string>(); //create backup list that will store strings as iterated
 
-            foreach(string item in aFruit) //for each string in the list
-            {
-                if (aFruitBackUp.Contains(item)) //if the backup list already contains the item
-                {
-                    Console.WriteLine(item + " has appeared before."); //console will say it has appeared before
-                }
-                else //otherwise
-                {
-                    Console.WriteLine(item + " has not appeared before."); //console will say it has not appeared before
-                }
-                aFruitBackUp.Add(item);
+            //foreach(string item in aFruit) //for each string in the list
+            //{
+            //    if (aFruitBackUp.Contains(item)) //if the backup list already contains the item
+            //    {
+            //        Console.WriteLine(item + " has appeared before."); //console will say it has appeared before
+            //    }
+            //    else //otherwise
+            //    {
+            //        Console.WriteLine(item + " has not appeared before."); //console will say it has not appeared before
+            //    }
+            //    aFruitBackUp.Add(item);
 
-            }
-            Console.ReadLine();
+            //}
+            //Console.ReadLine();
         }
     }
 }
