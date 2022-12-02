@@ -42,7 +42,7 @@ namespace Strings_and_Integers_Assignment
                     Console.ReadLine();
                 }
             }
-            Console.WriteLine("Emerged from the Try/Catch Block");
+            Console.WriteLine("Emerged from the Try/Catch Block")
         }
 
     }
