@@ -13,6 +13,7 @@ namespace Method_Class_Assignment
             _2_Integers ints = new _2_Integers(); //creating object
 
             ints.twoInts(3, 5); //name of object.name of method = call a method
+            ints.twoInts(i: 2, j: 8);
             
             Console.ReadLine();
         }
