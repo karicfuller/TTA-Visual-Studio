@@ -10,18 +10,18 @@ namespace Class_Assignment
     {
         static void Main(string[] args)
         {
-            Method method = new Method(); //instatiating object naming it method
+            Method method = new Method(); //instantiating object naming it method
 
             Console.WriteLine("Enter a number"); //requesting number from user
             int inputNum = Convert.ToInt32(Console.ReadLine()); //converting string to integer
 
             method.twoInts(inputNum); //calling method
 
-            int i = 0;
+            int i = 0; //values = 0
             int j = 0;
 
             method.outParameter(out i, out j); //object.method
-            Console.WriteLine(i + " " + j);
+            Console.WriteLine(i + " " + j); //display 2 numbers with values from class
 
             StaticClass.VoidMethod(); //static class doesn't need object - class.method
 
