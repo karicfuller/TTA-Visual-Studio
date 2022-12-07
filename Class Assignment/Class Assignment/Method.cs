@@ -8,7 +8,7 @@ namespace Class_Assignment
 {
     class Method
     {
-        public void twoInts(int i) //naming method twoInts with parameter i
+        public void twoInts(int i) //naming method twoInts with parameter "i"
         {
             int divideBy2 = i / 2; //
             Console.WriteLine(divideBy2); //divid
