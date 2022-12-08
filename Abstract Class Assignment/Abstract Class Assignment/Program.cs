@@ -10,11 +10,16 @@ namespace Abstract_Class_Assignment
     {
         static void Main(string[] args)
         {
+            IQuittable quittable = new Employee(); //creating object with Polymorphism
             Employee employee = new Employee(); //instantiate object
             employee.firstName = "Sample"; //property
             employee.lastName = "Student"; //property
             employee.SayName(); //calling SayName
             Console.ReadLine();
+        }
+        public void Quit() //calling method
+        {
+            Console.WriteLine("Implementation");
         }
     }
 }
