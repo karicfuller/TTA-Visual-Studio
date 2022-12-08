@@ -8,7 +8,7 @@ namespace Abstract_Class_Assignment
 {
     class Employee : Person //Employee class inherits from the Person class
     {
-        public override void SayName()
+        public override void SayName() //implementing from Person class
         {
         }
     }

@@ -10,10 +10,10 @@ namespace Abstract_Class_Assignment
     {
         static void Main(string[] args)
         {
-            Employee employee = new Employee();
-            employee.firstName = "Sample";
-            employee.lastName = "Student";
-            employee.SayName();
+            Employee employee = new Employee(); //instantiate object
+            employee.firstName = "Sample"; //property
+            employee.lastName = "Student"; //property
+            employee.SayName(); //calling SayName
             Console.ReadLine();
         }
     }
