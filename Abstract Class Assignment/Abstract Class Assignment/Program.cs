@@ -15,11 +15,8 @@ namespace Abstract_Class_Assignment
             employee.firstName = "Sample"; //property
             employee.lastName = "Student"; //property
             employee.SayName(); //calling SayName
+            quittable.Quit(); //calling Quit
             Console.ReadLine();
-        }
-        public void Quit() //calling method
-        {
-            Console.WriteLine("Implementation");
         }
     }
 }
