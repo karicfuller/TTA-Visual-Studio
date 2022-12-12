@@ -10,6 +10,15 @@ namespace Lambda_Assignment
     {
         static void Main(string[] args)
         {
+            Employee employee = new Employee();
+            List<string> employees = new List<string>() { "Joe", "Kari", "Oscar", "Matt", "James", "Kelly", "Mary", "David", "Anne", "Joe" };
+
+            foreach (string listNames in employees)
+            {
+                if (listNames.)
+            }
+
+
         }
     }
 }
