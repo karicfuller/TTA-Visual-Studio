@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace _21_Game
 {
@@ -41,6 +42,12 @@ namespace _21_Game
             //Console.WriteLine(card1.Face);
 
             //int count = deck.Cards.Count( x => x.Face == Face.Ace);
+
+            //string text = "Here is some text"; //written text
+            //File.WriteAllText(@"C:\Users\Kari Fuller\Desktop\log.txt", text); //write text
+            //string text = File.ReadAllText(@"C:\Users\Kari Fuller\Desktop\log.txt"); //read text
+
+            //DateTime dateTime = new DateTime(1995, 5, 23, 8, 32, 45);
 
             Console.WriteLine("Welcome to the Grand Hotel and Casino. Let's start by telling me your name.");
             string playerName = Console.ReadLine();
