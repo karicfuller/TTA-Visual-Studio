@@ -15,8 +15,8 @@ namespace Date_Time_Assignment
             Console.WriteLine(DateTime.Now);
             Console.WriteLine("Pick a number");
             int inputTime = Convert.ToInt32(Console.ReadLine());
-            DateTime newDateTime = dateTime.AddHours(inputTime);
-            Console.WriteLine(newDateTime);
+            DateTime currentTime = DateTime.Now;
+            Console.WriteLine(currentTime);
 
             Console.ReadLine();
         }
