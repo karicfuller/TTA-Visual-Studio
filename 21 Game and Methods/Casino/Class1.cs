@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _21_Game
+namespace Casino
 {
-    interface IWalkAway
+    public class Class1
     {
-        void WalkAway(Player player);
     }
 }

@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Casino.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _21_Game
+namespace Casino._21_Game
 {
-    public class TwentyOneGame : Game, IWalkAway //class TwentyOneGame inherits from Game class
+    public class TwentyOneGame : Game //class TwentyOneGame inherits from Game class
     {
         public TwentyOneDealer Dealer { get; set; }
 
