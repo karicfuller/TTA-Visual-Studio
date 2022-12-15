@@ -11,12 +11,12 @@ namespace Date_Time_Assignment
     {
         static void Main(string[] args)
         {
-            DateTime dateTime = new DateTime();
-            Console.WriteLine(DateTime.Now);
-            Console.WriteLine("Pick a number");
-            int inputTime = Convert.ToInt32(Console.ReadLine());
             DateTime currentTime = DateTime.Now;
             Console.WriteLine(currentTime);
+            Console.WriteLine("Pick a number");
+            int inputTime = Convert.ToInt32(Console.ReadLine());
+            DateTime dateTime = currentTime.AddHours(inputTime);
+            Console.WriteLine(dateTime);
 
             Console.ReadLine();
         }
