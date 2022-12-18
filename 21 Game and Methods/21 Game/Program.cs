@@ -50,7 +50,11 @@ namespace _21_Game
 
             //DateTime dateTime = new DateTime(1995, 5, 23, 8, 32, 45);
 
-            Console.WriteLine("Welcome to the Grand Hotel and Casino. Let's start by telling me your name.");
+            const string casinoName = "Grand Hotel and Casino";
+
+            Guid identifier = Guid.NewGuid();
+
+            Console.WriteLine("Welcome to the {0}. Let's start by telling me your name.", casinoName);
             string playerName = Console.ReadLine();
             
             Console.WriteLine("And how much money did you bring today?");

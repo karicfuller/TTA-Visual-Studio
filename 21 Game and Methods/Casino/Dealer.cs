@@ -16,13 +16,13 @@ namespace Casino._21_Game
         public void Deal(List<Card> Hand) //Deal method
         {
             Hand.Add(Deck.Cards.First()); //taking first card and add to hand
-            string card = string.Format(Deck.Cards.First().ToString() + "\n");
+            string card = string.Format(Deck.Cards.First().ToString() + "\n"); //writing to console card about to put in deck
+            Console.WriteLine(card);
             using (StreamWriter file = new StreamWriter(@"C:\Users\Kari Fuller\Desktop\log.txt", true))
             {
                 file.WriteLine(DateTime.Now);
                 file.WriteLine(card);
             }
-                Console.WriteLine(Deck.Cards.First().ToString() + "\n"); //writing to console card about to put in deck
             Deck.Cards.RemoveAt(0);
         }
     }
