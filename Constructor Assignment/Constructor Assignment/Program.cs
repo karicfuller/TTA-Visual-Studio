@@ -11,6 +11,13 @@ namespace Constructor_Assignment
         
         static void Main(string[] args)
         {
+            const string name = "Tom"; 
+            var age = 30; 
+            Person p1 = new Person(); // will pull default from constructor on Person.cs
+            Person p2 = new Person(name); //name = Tom
+            Person p3 = new Person(name, age); //name = Tom, age = 30
+            Console.ReadLine();
         }
+
     }
 }
