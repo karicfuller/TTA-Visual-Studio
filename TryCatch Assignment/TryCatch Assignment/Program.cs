@@ -11,10 +11,26 @@ namespace TryCatch_Assignment
         static void Main(string[] args)
         {
             Console.WriteLine("Enter your age.");
-            int age = Convert.ToInt32(Console.ReadLine());
+            try
+            {
+                int age = Convert.ToInt32(Console.ReadLine());
+                if (age <= 0)
+                {
+                    throw new ZeroException();
+                }
 
-            string currentYear = DateTime.Now.Year.ToString();
-            string birthYear = 
+                int currentYear = DateTime.Now.Year;
+                int birthYear = currentYear - age;
+                Console.WriteLine("You were born in the year " + birthYear);
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Please use a whole nummber.");
+            }
+            catch (ZeroException)
+            {
+            }
+            Console.ReadLine();
         }
     }
 }
