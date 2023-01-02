@@ -23,6 +23,27 @@ namespace CarInsurance.Controllers
         // GET: Insuree/Details/5
         public ActionResult Details(int? id)
         {
+            int monthly = 50;
+            int age = 0;
+
+            if (age <= 18)
+            {
+                int total = monthly + 100;
+            }
+            else if (age > 18 && age <= 25)
+            {
+                int total = monthly + 50;
+            }
+            else
+            {
+                int total = monthly + 25;
+            }
+
+            int year = 2000;
+            var make = "prosche";
+            var model = "911 Carrera";
+            int ticket = 1;
+
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
