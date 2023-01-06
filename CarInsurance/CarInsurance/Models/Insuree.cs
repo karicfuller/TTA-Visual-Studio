@@ -12,7 +12,7 @@ namespace CarInsurance.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Table
+    public partial class Insuree
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
